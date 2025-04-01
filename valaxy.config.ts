@@ -13,27 +13,36 @@ export default defineValaxyConfig<UserThemeConfig>({
   // site config see site.config.ts
 
   theme: 'yun',
-
+  
   themeConfig: {
     banner: {
       enable: true,
-      title: '云游君的小站',
+      title: '月に吠えらんねぇ……',
+      cloud: {
+        enable: true,
+      }
     },
+    colors: {
+      primary: '#34588EFF',
+    },
+    // say : {
+    //   enable : false,
+    // }, 
 
-    pages: [
-      {
-        name: '我的小伙伴们',
-        url: '/links/',
-        icon: 'i-ri-genderless-line',
-        color: 'dodgerblue',
-      },
-      {
-        name: '喜欢的女孩子',
-        url: '/girls/',
-        icon: 'i-ri-women-line',
-        color: 'hotpink',
-      },
-    ],
+    // pages: [
+    //   // {
+    //   //   name: '我的小伙伴们',
+    //   //   url: '/links/',
+    //   //   icon: 'i-ri-genderless-line',
+    //   //   color: 'dodgerblue',
+    //   // },
+    //   // {
+    //   //   name: '喜欢的女孩子',
+    //   //   url: '/girls/',
+    //   //   icon: 'i-ri-women-line',
+    //   //   color: 'hotpink',
+    //   // },
+    // ],
 
     footer: {
       since: 2016,
