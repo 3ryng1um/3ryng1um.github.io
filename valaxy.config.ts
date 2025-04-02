@@ -26,7 +26,7 @@ export default defineValaxyConfig<UserThemeConfig>({
       enable: true,
       url:"/wallpaper.jpg",
       dark: "/wallpaper.jpg",
-      opacity: 0.75,
+      opacity: 0.25,
     },
     colors: {
       primary: '#2D4F82FF',
