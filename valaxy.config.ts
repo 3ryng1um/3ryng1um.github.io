@@ -22,8 +22,14 @@ export default defineValaxyConfig<UserThemeConfig>({
         enable: true,
       }
     },
+    bg_image: {
+      enable: true,
+      url:"/wallpaper.jpg",
+      dark: "/wallpaper.jpg",
+      opacity: 0.75,
+    },
     colors: {
-      primary: '#34588EFF',
+      primary: '#2D4F82FF',
     },
     // say : {
     //   enable : false,

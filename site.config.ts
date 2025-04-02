@@ -4,11 +4,12 @@ export default defineSiteConfig({
   url: 'https://3ryng1um.github.io/',
   lang: 'zh-CN',
   title: 'ようこそ～うちの界隈へ',
+  subtitle: 'マイーボログ',
   author: {
     name: 'eryn',
     avatar: '/avatar.jpg',
     status: {
-      emoji: '。',
+      emoji: '...',
       message: 'なんでもないかしら',
     },
   },
