@@ -26,14 +26,20 @@ export default defineValaxyConfig<UserThemeConfig>({
       enable: true,
       url:"/wallpaper.jpg",
       dark: "/wallpaper.jpg",
-      opacity: 0.25,
+      opacity: 0.2,
     },
     colors: {
       primary: '#2D4F82FF',
     },
-    // say : {
-    //   enable : false,
-    // }, 
+
+    say : {
+      enable: false,
+      api: "string",
+      hitokoto: {
+          enable: false,
+          api: "string",
+        },
+    }, 
 
     // pages: [
     //   // {
@@ -51,13 +57,26 @@ export default defineValaxyConfig<UserThemeConfig>({
     // ],
 
     footer: {
-      since: 2016,
+      since: 2025,
       beian: {
         enable: true,
-        icp: '苏ICP备17038157号',
+        icp: '还没备案呢',
       },
     },
   },
 
   unocss: { safelist },
+  // addons: [
+  //   addonWaline({
+  //     serverURL: '后端链接',
+  //     //以下功能未实现，但可以先写进配置里
+  //     pageview: true,
+  //     dark: 'auto',
+  //     requiredMeta: ['nick','mail'],
+  //     locale:{
+  //       placeholder: '填写邮箱，可以收到回复通知~'
+  //     }
+        
+  //   }),
+  // ],
 })

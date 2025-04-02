@@ -1,10 +1,9 @@
 ---
 layout: post
-title: newpost
+title: test——不知哪年的古早笔记杂烩
 date: 2025-04-02 15:01:37
 ---
-### 3
-#### dlresolve
+### dlresolve
 ```c
 _dl_fixup(struct link_map *l, ElfW(Word) reloc_arg){
   //首先通过参数reloca_arg计算入口地址, DT_JMPREL即.rel.plt, reloc_offset 就是 reloc_arg
@@ -33,11 +32,11 @@ typedef struct
 } Elf32_Sym;
 ```
 
-### 
+#### ？
 快慢指针问题：
 判断链表是否有环
 链表中间节点
-#### consolidate(整理到unsortedbin)低版本
+### consolidate(整理到unsortedbin)低版本
 1. malloc >small bin,且fastbin中有chunk(fast-向后合并->unsorted->small)
     e.g.malloc(p1=0x30);free(p1);malloc(0x500)
 2. 切割unsortedchunk,产生last reminder（不整理fastchunk）
