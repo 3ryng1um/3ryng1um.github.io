@@ -1,12 +1,19 @@
-// $banner-animation-duration: 3s;
+// // $banner-animation-duration: 3s;
 // $char-animation-duration: 10s;
 
-#yun-banner {
-  --banner-char-color: #00ff37;
-}
-.char-left,
-.char-right {
-  animation-duration: 80s !important;
-  animation-delay: 8s;      // 延迟与线条同步
-  animation-fill-mode: forwards;
-}
+// #yun-banner {
+//   --banner-char-color: #0015ff;
+// }
+// // .char-left,
+// // .char-right {
+// //   animation-duration: 80s !important;
+// //   animation-delay: 8s;      // 延迟与线条同步
+// //   animation-fill-mode: forwards;
+// // }
+// .transition-800 {
+//   transition: all 20000ms !important; // 延长到 2s
+// }
+
+// .delay-1000 {
+//   transition-delay: 20000ms !important; // 延迟到 2s
+// }
