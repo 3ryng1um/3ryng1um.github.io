@@ -1,14 +1,12 @@
-$banner-animation-duration: 3s;
+// $banner-animation-duration: 3s;
 // $char-animation-duration: 10s;
 
 #yun-banner {
-  --banner-line-height: 5;
-  --line-animation-duration: 8s;
   --banner-char-color: #ff0000;
 }
 .char-left,
 .char-right {
-  animation-duration: 8s;
+  animation-duration: 80s !important;
   animation-delay: 8s;      // 延迟与线条同步
   animation-fill-mode: forwards;
 }
