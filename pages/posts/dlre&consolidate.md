@@ -1,5 +1,6 @@
 ---
 layout: post
+categories: 这学pwn多是一件美逝
 title: test——不知哪年的古早笔记杂烩
 date: 2025-04-02 15:01:37
 ---
@@ -50,3 +51,9 @@ malloc_consolidate函数可以将fastbins中能和其它chunk合并的fastchunk�
   * fastchunk移到smallbin，doublefree
 * 与unsortedchunk重合
 
+::: warning
+*test warning*
+tip warning danger info
+:::
+
+==Marked text==
