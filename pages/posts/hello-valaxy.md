@@ -1,6 +1,6 @@
 ---
 title: Hello, Valaxy!
-# hide: index
+hide: index
 date: 2022-04-01
 updated: 2022-04-01
 categories: 这是什么？

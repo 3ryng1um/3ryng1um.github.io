@@ -55,5 +55,3 @@ malloc_consolidate函数可以将fastbins中能和其它chunk合并的fastchunk�
 *test warning*
 tip warning danger info
 :::
-
-==Marked text==
