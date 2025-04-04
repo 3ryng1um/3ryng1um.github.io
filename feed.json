@@ -1,0 +1,37 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "ようこそ～うちの界隈へ",
+    "home_page_url": "https://3ryng1um.github.io/",
+    "feed_url": "https://3ryng1um.github.io/feed.json",
+    "icon": "https://3ryng1um.github.io/avatar.jpg",
+    "author": {
+        "name": "eryn",
+        "url": "https://valaxy.site"
+    },
+    "items": [
+        {
+            "id": "",
+            "content_html": "<h3>dlresolve</h3>\n<pre><code class=\"language-c\">_dl_fixup(struct link_map *l, ElfW(Word) reloc_arg){\n  //首先通过参数reloca_arg计算入口地址, </code></pre>\n<br/><p>访问 <a href=\"https://3ryng1um.github.io/posts/dlre&consolidate\" target=\"_blank\">https://3ryng1um.github.io/posts/dlre&consolidate</a> 阅读全文。</p>",
+            "url": "https://3ryng1um.github.io/posts/dlre&consolidate",
+            "title": "test——不知哪年的古早笔记杂烩",
+            "date_modified": "2025-04-02T15:01:37.000Z",
+            "date_published": "2025-04-04T08:42:03.586Z",
+            "author": {
+                "name": "eryn",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>wsl安装：</h2>\n<pre><code class=\"language-c\">wsl --install Ubuntu22.04\nwsl --export Ubuntu-22.04 C:\\ubuntu22.04.tar\nwsl --unregis</code></pre>\n<br/><p>访问 <a href=\"https://3ryng1um.github.io/posts/环境配置\" target=\"_blank\">https://3ryng1um.github.io/posts/环境配置</a> 阅读全文。</p>",
+            "url": "https://3ryng1um.github.io/posts/环境配置",
+            "title": "环境配置",
+            "date_modified": "2025-03-09T12:59:00.000Z",
+            "date_published": "2025-04-04T08:42:03.586Z",
+            "author": {
+                "name": "eryn",
+                "url": "https://valaxy.site"
+            }
+        }
+    ]
+}
