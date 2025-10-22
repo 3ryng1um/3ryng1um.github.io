@@ -33,7 +33,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - name: 📦 Install Dependencies
-        run: npm i
+        run: pnpm i
       # ------------------------
       # 可选：从 Notion 拉取内容（构建时）
       # 请确保你有 scripts/fetch-notion.js 或等价脚本在仓库内
