@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "fetch-notion": "node scripts/fetch-notion.js",
+    "fetch-notion": "node scripts/fetch-notion.cjs",
     "build": "npm run build:ssg",
     "build:spa": "valaxy build",
     "build:ssg": "valaxy build --ssg",
