@@ -1,6 +1,10 @@
 name: GitHub Pages
 
 on:
+  workflow_dispatch:   # <- 允许手动点击 "Run workflow"
+  # 可选：定时构建（注释掉或修改cron）
+  # schedule:
+  #   - cron: '0 21 * * *'  # 每天 UTC 21:00（按需修改）
   push:
     branches:
       # The branch where the project source code resides
@@ -30,7 +34,17 @@ jobs:
 
       - name: 📦 Install Dependencies
         run: npm i
-
+      # ------------------------
+      # 可选：从 Notion 拉取内容（构建时）
+      # 请确保你有 scripts/fetch-notion.js 或等价脚本在仓库内
+      # 并在仓库 Settings → Secrets 里配置 NOTION_TOKEN / NOTION_DATABASE_ID
+      - name: Fetch content from Notion -> Markdown
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+        run: |
+          npm run fetch-notion
+          
       - name: 🌌 Build Valaxy Blog
         run: npm run build
 

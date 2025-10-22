@@ -33,10 +33,6 @@ typedef struct
 } Elf32_Sym;
 ```
 
-#### ？
-快慢指针问题：
-判断链表是否有环
-链表中间节点
 ### consolidate(整理到unsortedbin)低版本
 1. malloc >small bin,且fastbin中有chunk(fast-向后合并->unsorted->small)
     e.g.malloc(p1=0x30);free(p1);malloc(0x500)

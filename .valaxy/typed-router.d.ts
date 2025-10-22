@@ -30,6 +30,8 @@ declare module 'vue-router/auto-routes' {
     '/posts/': RouteRecordInfo<'/posts/', '/posts', Record<never, never>, Record<never, never>>,
     '/posts/dlre&consolidate': RouteRecordInfo<'/posts/dlre&consolidate', '/posts/dlre&consolidate', Record<never, never>, Record<never, never>>,
     '/posts/hello-valaxy': RouteRecordInfo<'/posts/hello-valaxy', '/posts/hello-valaxy', Record<never, never>, Record<never, never>>,
+    '/posts/kernel 1aff8c7e8b9c80dd8de1f0e701395588': RouteRecordInfo<'/posts/kernel 1aff8c7e8b9c80dd8de1f0e701395588', '/posts/kernel 1aff8c7e8b9c80dd8de1f0e701395588', Record<never, never>, Record<never, never>>,
+    '/posts/环境配置': RouteRecordInfo<'/posts/环境配置', '/posts/环境配置', Record<never, never>, Record<never, never>>,
     '/tags/': RouteRecordInfo<'/tags/', '/tags', Record<never, never>, Record<never, never>>,
   }
 }
