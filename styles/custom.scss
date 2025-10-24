@@ -1,0 +1,66 @@
+/* styles/custom.scss
+   覆盖正文与页面标题的字号，尽可能兼容 Valaxy 常见主题与 Tailwind typography
+*/
+
+/* ---- 页面顶部文章标题（优先处理） ---- */
+.post-title,
+.post-header h1,
+.article-header h1,
+.post-title h1,
+.post-title span {
+  font-size: 2rem !important;
+  line-height: 1.2 !important;
+  font-weight: 700 !important;
+}
+
+/* ---- 正文容器：兼容多种常见 class ---- */
+/* Tailwind typography 插件 通常会把内容放在 .prose 类下 */
+.prose h1,
+.markdown-body h1,
+.article-content h1,
+.post-content h1,
+.va-content h1 {
+  font-size: 1.9rem !important;
+}
+
+/* h2 / h3 */
+.prose h2,
+.markdown-body h2,
+.article-content h2,
+.post-content h2,
+.va-content h2 {
+  font-size: 1.9rem !important;
+}
+
+.prose h3,
+.markdown-body h3,
+.article-content h3,
+.post-content h3,
+.va-content h3 {
+  font-size: 1.6rem !important;
+}
+
+.prose h4,
+.markdown-body h4,
+.article-content h4,
+.post-content h4,
+.va-content h4 {
+  font-size: 1.3rem !important;
+}
+
+/* 有些主题直接在 h1/h2 上套了 Tailwind 类 text-2xl 等，增加更高优先级选择器以覆盖 */
+article h1,
+article h2,
+article h3, 
+article h4 {
+  font-size: inherit; /* 让上面选择器生效 */
+}
+
+/* 如果还存在强制的 inline 样式或更高优先级，可以最后再加一个通配强制覆盖（谨慎使用） */
+/*
+:root .prose h1,
+:root .prose h2,
+:root .prose h3 {
+  font-size: 1.9rem !important;
+}
+*/
