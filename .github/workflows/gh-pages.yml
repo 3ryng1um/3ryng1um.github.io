@@ -43,7 +43,7 @@ jobs:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
         run: |
-          npm run fetch-notion
+          npm run fetchno
           
       - name: 🌌 Build Valaxy Blog
         run: npm run build
