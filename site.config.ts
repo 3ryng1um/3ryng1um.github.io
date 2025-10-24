@@ -4,7 +4,7 @@ export default defineSiteConfig({
   url: 'https://3ryng1um.github.io/',
   lang: 'zh-CN',
   title: 'ようこそ～うちの界隈へ',
-  subtitle: 'マイーボログ',
+  subtitle: 'マイーブログへようこそ！',
   author: {
     name: 'eryn',
     avatar: '/avatar.jpg',
@@ -13,6 +13,7 @@ export default defineSiteConfig({
       message: 'なんでもないかしら',
     },
   },
+  favicon: '/favicon.svg',
   description: '',
   social: [
     // {

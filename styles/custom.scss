@@ -56,6 +56,13 @@ article h4 {
   font-size: inherit; /* 让上面选择器生效 */
 }
 
+/* 仅在归档页面中调整 .post-title 的字号 */
+.post-collapse .post-title {
+  font-size: 1.25rem !important; /* 设置为您需要的字号 */
+  line-height: 1.4;
+  font-weight: 700;
+}
+
 /* 如果还存在强制的 inline 样式或更高优先级，可以最后再加一个通配强制覆盖（谨慎使用） */
 /*
 :root .prose h1,

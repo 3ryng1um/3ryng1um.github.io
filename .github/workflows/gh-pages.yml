@@ -36,7 +36,7 @@ jobs:
         run: npm i
       # ------------------------
       # 可选：从 Notion 拉取内容（构建时）
-      # 请确保你有 scripts/fetch-notion.js 或等价脚本在仓库内
+      # 请确保你有 scripts/fetch-notion.cjs 或等价脚本在仓库内
       # 并在仓库 Settings → Secrets 里配置 NOTION_TOKEN / NOTION_DATABASE_ID
       - name: Fetch content from Notion -> Markdown
         env:

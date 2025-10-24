@@ -45,7 +45,7 @@ function safeSlug(text) {
 }
 
 function frontMatter(meta) {
-  // meta: { title, date, tags, slug, categories, summary, hide, updated }
+  // meta: { title, date, tags, slug, categories, excerpt, hide, updated }
   const lines = ['---'];
   if (meta.title) lines.push(`title: "${meta.title.replace(/"/g, '\\"')}"`);
   if (meta.date) lines.push(`date: "${meta.date}"`);
@@ -57,7 +57,7 @@ function frontMatter(meta) {
     lines.push(`categories: [${cats}]`);
   }
   if (meta.tags && meta.tags.length) lines.push(`tags: [${meta.tags.map(t => `"${t.replace(/"/g,'\\"')}"`).join(', ')}]`);
-  if (meta.summary) lines.push(`summary: "${meta.summary.replace(/"/g, '\\"')}"`);
+  if (meta.excerpt) lines.push(`excerpt: "${meta.excerpt.replace(/"/g, '\\"')}"`);
   if (meta.hide) lines.push(`hide: ${JSON.stringify(meta.hide)}`); // 写入 "all" 或 "index"
   lines.push('---\n');
 
@@ -285,18 +285,21 @@ async function downloadToFile(url, filepath) {
         }
       }
 
-      // summary / excerpt（支持 Summary, Description, Excerpt）
-      let summary = '';
-      const summaryProp = props['Summary'] || props['summary'] || props['Description'] || props['description'] || props['Excerpt'] || props['excerpt'];
-      if (summaryProp) {
-        if (summaryProp.type === 'rich_text' && Array.isArray(summaryProp.rich_text)) {
-          summary = richTextToPlain(summaryProp.rich_text);
-        } else if (summaryProp.type === 'title' && Array.isArray(summaryProp.title)) {
-          summary = richTextToPlain(summaryProp.title);
+      // excerpt（支持 rich_text 或 text）
+      let excerpt = '';
+      const excerptProp = props['Excerpt'] || props['excerpt'];
+      if (excerptProp) {
+        if ((excerptProp.type === 'rich_text' || excerptProp.type === 'text') && Array.isArray(excerptProp.rich_text)) {
+          excerpt = richTextToPlain(excerptProp.rich_text);
+        } else if (excerptProp.type === 'rich_text' && Array.isArray(excerptProp.rich_text)) {
+          excerpt = richTextToPlain(excerptProp.rich_text);
+        } else if (excerptProp.type === 'text' && Array.isArray(excerptProp.text)) {
+          excerpt = richTextToPlain(excerptProp.text);
         } else {
-          summary = plainFromRichOrTitle(summaryProp) || '';
+          excerpt = plainFromRichOrTitle(excerptProp) || '';
         }
       }
+
 
       // hide 字段：优先支持 select，允许值：all / index / (空)
       let hide = '';
@@ -400,7 +403,7 @@ async function downloadToFile(url, filepath) {
 
       // 构建文件内容：front-matter + md
       const titleHeading = `# ${title}\n\n`; // 将 title 写成正文 H1
-      const fm = frontMatter({ title, date, categories, hide, tags, slug, summary, });
+      const fm = frontMatter({ title, date, categories, hide, tags, slug, excerpt, });
       const content = fm + md;
 
       // 写文件到 pages/posts/<slug>.md

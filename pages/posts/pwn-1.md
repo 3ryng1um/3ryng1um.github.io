@@ -1,8 +1,10 @@
 ---
-title: "pwn堆基础 (1)"
+title: "pwn堆基础 "
 date: "2025-10-23T13:57:00.000Z"
 slug: "pwn-1"
 categories: ["这学pwn多是一件美逝"]
+tags: ["heap"]
+excerpt: "堆·半成品"
 ---
 
 ## fastbin filo
