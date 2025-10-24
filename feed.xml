@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>ようこそ～うちの界隈へ</title>
+        <link>https://3ryng1um.github.io/</link>
+        <description></description>
+        <lastBuildDate>Fri, 24 Oct 2025 13:46:24 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>ようこそ～うちの界隈へ</title>
+            <url>https://3ryng1um.github.io/avatar.jpg</url>
+            <link>https://3ryng1um.github.io/</link>
+        </image>
+        <copyright>CC BY-NC-SA 4.0 2025 © eryn</copyright>
+        <atom:link href="https://3ryng1um.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[test——不知哪年的古早笔记杂烩]]></title>
+            <link>https://3ryng1um.github.io/posts/dlre&amp;consolidate</link>
+            <guid>https://3ryng1um.github.io/posts/dlre&amp;consolidate</guid>
+            <pubDate>Fri, 24 Oct 2025 13:45:23 GMT</pubDate>
+            <content:encoded><![CDATA[<h3>dlresolve</h3>
+<pre><code class="language-c">_dl_fixup(struct link_map *l, ElfW(Word) reloc_arg){
+  //首先通过参数reloca_arg计算入口地</code></pre>
+<br/><p>访问 <a href="https://3ryng1um.github.io/posts/dlre&consolidate" target="_blank">https://3ryng1um.github.io/posts/dlre&consolidate</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (eryn)</author>
+        </item>
+        <item>
+            <title><![CDATA[valaxy文章的基本信息]]></title>
+            <link>https://3ryng1um.github.io/posts/hello-valaxy</link>
+            <guid>https://3ryng1um.github.io/posts/hello-valaxy</guid>
+            <pubDate>Fri, 24 Oct 2025 13:45:23 GMT</pubDate>
+            <content:encoded><![CDATA[<p><a href="https://3ryng1um.github.io/">bookmark</a></p>
+<h3>frontmatter</h3>
+<ul>
+<li><code>title</code>: 文章标题</li>
+<li><code>hide</code>: 你可以在文章头部添加 hid</li>
+</ul>
+<br/><p>访问 <a href="https://3ryng1um.github.io/posts/hello-valaxy" target="_blank">https://3ryng1um.github.io/posts/hello-valaxy</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (eryn)</author>
+        </item>
+        <item>
+            <title><![CDATA[pwn堆基础 ]]></title>
+            <link>https://3ryng1um.github.io/posts/pwn-1</link>
+            <guid>https://3ryng1um.github.io/posts/pwn-1</guid>
+            <pubDate>Fri, 24 Oct 2025 13:45:23 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>fastbin filo</h2>
+<p>0x20-0x80  10个</p>
+<p>global_max_fast: fastchunk最大范围</p>
+<h4>double free</h4>
+<h4>alloc t</h4>
+<br/><p>访问 <a href="https://3ryng1um.github.io/posts/pwn-1" target="_blank">https://3ryng1um.github.io/posts/pwn-1</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (eryn)</author>
+        </item>
+        <item>
+            <title><![CDATA[环境配置]]></title>
+            <link>https://3ryng1um.github.io/posts/环境配置</link>
+            <guid>https://3ryng1um.github.io/posts/环境配置</guid>
+            <pubDate>Fri, 24 Oct 2025 13:45:23 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>wsl安装：</h2>
+<pre><code class="language-c">wsl --install Ubuntu22.04
+wsl --export Ubuntu-22.04 C:\ubuntu22.04.tar
+wsl --unregis</code></pre>
+<br/><p>访问 <a href="https://3ryng1um.github.io/posts/环境配置" target="_blank">https://3ryng1um.github.io/posts/环境配置</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (eryn)</author>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://3ryng1um.github.io/</id>
+    <title>ようこそ～うちの界隈へ</title>
+    <updated>2025-10-24T13:46:24.738Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>eryn</name>
+        <email>i@valaxy.site</email>
+        <uri>https://valaxy.site</uri>
+    </author>
+    <link rel="alternate" href="https://3ryng1um.github.io/"/>
+    <link rel="self" href="https://3ryng1um.github.io/atom.xml"/>
+    <logo>https://3ryng1um.github.io/avatar.jpg</logo>
+    <icon>https://3ryng1um.github.io/favicon.svg</icon>
+    <rights>CC BY-NC-SA 4.0 2025 © eryn</rights>
+    <entry>
+        <title type="html"><![CDATA[test——不知哪年的古早笔记杂烩]]></title>
+        <id>https://3ryng1um.github.io/posts/dlre&amp;consolidate</id>
+        <link href="https://3ryng1um.github.io/posts/dlre&amp;consolidate"/>
+        <updated>2025-04-02T15:01:37.000Z</updated>
+        <content type="html"><![CDATA[<h3>dlresolve</h3>
+<pre><code class="language-c">_dl_fixup(struct link_map *l, ElfW(Word) reloc_arg){
+  //首先通过参数reloca_arg计算入口地</code></pre>
+<br/><p>访问 <a href="https://3ryng1um.github.io/posts/dlre&consolidate" target="_blank">https://3ryng1um.github.io/posts/dlre&consolidate</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>eryn</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2025-10-24T13:45:23.803Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[valaxy文章的基本信息]]></title>
+        <id>https://3ryng1um.github.io/posts/hello-valaxy</id>
+        <link href="https://3ryng1um.github.io/posts/hello-valaxy"/>
+        <updated>2025-10-23T14:14:00.000Z</updated>
+        <content type="html"><![CDATA[<p><a href="https://3ryng1um.github.io/">bookmark</a></p>
+<h3>frontmatter</h3>
+<ul>
+<li><code>title</code>: 文章标题</li>
+<li><code>hide</code>: 你可以在文章头部添加 hid</li>
+</ul>
+<br/><p>访问 <a href="https://3ryng1um.github.io/posts/hello-valaxy" target="_blank">https://3ryng1um.github.io/posts/hello-valaxy</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>eryn</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2025-10-24T13:45:23.803Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[pwn堆基础 ]]></title>
+        <id>https://3ryng1um.github.io/posts/pwn-1</id>
+        <link href="https://3ryng1um.github.io/posts/pwn-1"/>
+        <updated>2025-10-23T13:57:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>fastbin filo</h2>
+<p>0x20-0x80  10个</p>
+<p>global_max_fast: fastchunk最大范围</p>
+<h4>double free</h4>
+<h4>alloc t</h4>
+<br/><p>访问 <a href="https://3ryng1um.github.io/posts/pwn-1" target="_blank">https://3ryng1um.github.io/posts/pwn-1</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>eryn</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2025-10-24T13:45:23.803Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[环境配置]]></title>
+        <id>https://3ryng1um.github.io/posts/环境配置</id>
+        <link href="https://3ryng1um.github.io/posts/环境配置"/>
+        <updated>2025-03-09T12:59:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>wsl安装：</h2>
+<pre><code class="language-c">wsl --install Ubuntu22.04
+wsl --export Ubuntu-22.04 C:\ubuntu22.04.tar
+wsl --unregis</code></pre>
+<br/><p>访问 <a href="https://3ryng1um.github.io/posts/环境配置" target="_blank">https://3ryng1um.github.io/posts/环境配置</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>eryn</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2025-10-24T13:45:23.803Z</published>
+    </entry>
+</feed>
